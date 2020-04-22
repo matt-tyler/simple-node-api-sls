@@ -169,7 +169,7 @@ paths:
               Fn::Sub: |
                 #set($token = $input.params("token"))
                 {
-                    "TableName": "simple-node-api-Database-5IHXRFDA8AAX"
+                    "TableName": "${Database}",
                     ,"IndexName": "t-dt"
                     ,"KeyConditionExpression": "t = :v1"
                     ,"ExpressionAttributeValues": {
